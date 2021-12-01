@@ -1,0 +1,54 @@
+body {
+    background-color: darkcyan;
+}
+
+h1 {
+    color: fuchsia;
+    text-align: center;
+
+}
+
+h3 {
+    color: yellow;
+    border: 3px dashed purple;
+
+
+}
+
+#price {
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+}
+
+h2 {
+    color:tomato;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center; 
+
+}
+img {
+    border: 5px dotted fuchsia;
+    height: 40%;
+    
+}
+#embed-video {
+    display: none;
+}
+
+#buy-button {
+    display: flex;
+
+
+}
+button {
+    margin: 10px;
+    border: 3px solid yellow;
+    color: tomato;
+    font-size: 20px;
+    background-color: black
+}
