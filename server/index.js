@@ -1,3 +1,4 @@
+// require("dotenv").config();
 const { Console } = require("console");
 const express = require("express");
 const cors = require("cors");
@@ -8,7 +9,7 @@ const Rollbar = require("rollbar");
 app.use(express.static("client"))
 
 const rollbar = new Rollbar({
-    accessToken: 'cb70f6fc48504b9b89581c679d3f4171',
+    accessToken: "cb70f6fc48504b9b89581c679d3f4171",
     captureUncaught: true,
     captureUnhandledRejections: true,
 })
@@ -19,9 +20,11 @@ app.get("/", () => {
 })
 
 app.get("/", (req, res) => {
-    rollbar.info("Someone visited the site")
+    
 
-    res.sendFile(path.join(__dirname, "../index.html"))
+    res.sendFile(path.join(__dirname, "../client/index.html"))
+
+    rollbar.info("Someone visited the site")
 })
 
 
