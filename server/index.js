@@ -16,15 +16,13 @@ const rollbar = new Rollbar({
 
 //endpoints
 app.get("/", () => {
-    resizeBy.sendFile(path.join(__dirname, "../index.html"))
+    res.sendFile(path.join(__dirname, "../index.html"))
 })
 
 app.get("/", (req, res) => {
-    
+    rollbar.info("Someone visited the site")
 
     res.sendFile(path.join(__dirname, "../client/index.html"))
-
-    rollbar.info("Someone visited the site")
 })
 
 
