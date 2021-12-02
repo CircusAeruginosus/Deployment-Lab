@@ -10,6 +10,7 @@ h1 {
 
 h3 {
     color: yellow;
+    text-decoration: blink;
     border: 3px dashed purple;
 
 
