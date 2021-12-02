@@ -21,7 +21,7 @@ app.get("/", () => {
 app.get("/", (req, res) => {
     rollbar.info("Someone visited the site")
 
-    res.sendFile(path.join(__dirname, "../client/index.html"))
+    res.sendFile(path.join(__dirname, "../index.html"))
 })
 
 
